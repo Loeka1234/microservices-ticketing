@@ -2,7 +2,7 @@ FROM node:alpine
 
 WORKDIR /app
 COPY package.json .
-RUN yarn && yarn -D
+RUN yarn install --production=true
 COPY . .
 
 CMD ["yarn", "start"]
