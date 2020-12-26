@@ -3,13 +3,13 @@ import "express-async-errors";
 import cookieSession from "cookie-session";
 
 // Routes
-import { currentUserRouter } from "./routes/current-user";
-import { signinRouter } from "./routes/signin";
-import { signoutRouter } from "./routes/signout";
-import { signupRouter } from "./routes/signup";
+import { createTickerRouter } from "./routes/new";
+import { showTicketRouter } from "./routes/show";
+import { indexTicketRouter } from "./routes";
+import { updateTicketRouter } from "./routes/update";
 
 // Middlewares
-import { errorHandler, NotFoundError } from "@loeka/common";
+import { currentUser, errorHandler, NotFoundError } from "@loeka/common";
 
 const app = express();
 app.set("trust proxy", true);
@@ -20,12 +20,13 @@ app.use(
 		secure: process.env.NODE_ENV !== "test",
 	})
 );
+app.use(currentUser);
 
 // Routes
-app.use(currentUserRouter);
-app.use(signinRouter);
-app.use(signoutRouter);
-app.use(signupRouter);
+app.use(createTickerRouter);
+app.use(showTicketRouter);
+app.use(indexTicketRouter);
+app.use(updateTicketRouter);
 
 // Not found error for all other routes
 app.all("*", () => {
