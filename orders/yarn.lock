@@ -466,9 +466,9 @@
     chalk "^4.0.0"
 
 "@loeka/common@^1.0.3":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@loeka/common/-/common-1.0.8.tgz#439fd8db85821839d5a6ee62c393e297e6128da5"
-  integrity sha512-CYm617Gzo5CslQkLw6RjZCKOTR2dyW5z4UkFBHPzs1/mwER64VgrRzuphdKaOhLWgTbIC2PT/F70b0lzvbaSPA==
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@loeka/common/-/common-1.0.9.tgz#91fd4011580f96eaabcee930ee75e44444f92c9f"
+  integrity sha512-qw7rqQVV62CscVrwYDsRmJryrxm75QXYFQwEhOJzX9UlAfPYUz+Uym3YOcYrAiXaV1EYsp7fB3pXt40U3rT+Ug==
   dependencies:
     "@types/cookie-session" "^2.0.39"
     "@types/express" "^4.17.5"
@@ -648,9 +648,9 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "14.14.17"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.17.tgz#29fab92f3986c0e379968ad3c2043683d8020dbb"
-  integrity sha512-G0lD1/7qD60TJ/mZmhog76k7NcpLWkPVGgzkRy3CTlnFu4LUQh5v2Wa661z6vnXmD8EQrnALUyf0VRtrACYztw==
+  version "14.14.20"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.20.tgz#f7974863edd21d1f8a494a73e8e2b3658615c340"
+  integrity sha512-Y93R97Ouif9JEOWPIUyU+eyIdyRqQR0I8Ez1dzku4hDx34NWh4HbtIc3WNzwB1Y9ULvNGeu5B8h8bVL5cAk4/A==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -1718,7 +1718,15 @@ express-async-errors@^3.1.1:
   resolved "https://registry.yarnpkg.com/express-async-errors/-/express-async-errors-3.1.1.tgz#6053236d61d21ddef4892d6bd1d736889fc9da41"
   integrity sha512-h6aK1da4tpqWSbyCa3FxB/V6Ehd4EEB15zyQq9qe75OZBp0krinNKuH4rAY+S/U/2I36vdLAUFSjQJ+TFmODng==
 
-express-validator@^6.4.0, express-validator@^6.8.0:
+express-validator@^6.4.0:
+  version "6.9.2"
+  resolved "https://registry.yarnpkg.com/express-validator/-/express-validator-6.9.2.tgz#4de977aa0bb32948240900fd7387f4948399ac64"
+  integrity sha512-Yqlsw2/uBobtBVkP+gnds8OMmVAEb3uTI4uXC93l0Ym5JGHgr8Vd4ws7oSo7GGYpWn5YCq4UePMEppKchURXrw==
+  dependencies:
+    lodash "^4.17.20"
+    validator "^13.5.2"
+
+express-validator@^6.8.0:
   version "6.9.0"
   resolved "https://registry.yarnpkg.com/express-validator/-/express-validator-6.9.0.tgz#0cc5e5814a900f5ae63c55dd5627434cb6fb02ca"
   integrity sha512-jScWCo5PwzfmgXhD7bXKWoMSMHttrsN1FpCxuuPby5umeIN1cSKaSV2vQkGinmjdWTRDKRPcU2BlWSXZxNmWYg==
